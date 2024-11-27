@@ -1,0 +1,455 @@
+
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Parth Salke - CV</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Add these new styles */
+			/* Smooth scroll behavior */
+			html {
+				scroll-behavior: smooth;
+			}
+	
+			/* Enhanced section transitions */
+			section.post {
+				opacity: 0;
+				transform: translateY(20px);
+				animation: fadeInUp 0.6s ease forwards;
+			}
+	
+			@keyframes fadeInUp {
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+	
+			/* Improved education cards */
+			.education-card {
+				background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+				border: 1px solid rgba(255,255,255,0.1);
+			}
+	
+			.education-card:hover {
+				background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+				transform: translateY(-8px) scale(1.01);
+			}
+	
+			/* Enhanced skill tags */
+			.skill-tag {
+				background: linear-gradient(135deg, #18bfef, #1a9bc7);
+				box-shadow: 0 2px 4px rgba(24,191,239,0.2);
+			}
+	
+			/* Animated section headers */
+			h2 {
+				position: relative;
+				display: inline-block;
+				margin-bottom: 1.5em;
+			}
+	
+			h2:after {
+				content: '';
+				position: absolute;
+				bottom: -10px;
+				left: 0;
+				width: 0;
+				height: 3px;
+				background: #18bfef;
+				transition: width 0.3s ease;
+			}
+	
+			h2:hover:after {
+				width: 100%;
+			}
+	
+			/* Enhanced experience items */
+			h3 {
+				position: relative;
+				padding-left: 1.5em;
+			}
+	
+			h3 span {
+				position: absolute;
+				left: 0;
+				color: #18bfef;
+				transition: transform 0.3s ease;
+			}
+	
+			h3:hover span {
+				transform: translateX(5px);
+			}
+	
+			/* Certification items enhancement */
+			.certification-item {
+				background: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+				border-left: 3px solid transparent;
+				padding: 0.8em 1em;
+				margin-bottom: 0.5em;
+			}
+	
+			.certification-item:hover {
+				border-left-color: #18bfef;
+				transform: translateX(10px);
+				background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Make the data shine!</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li class="active"><a href="generic.html">CV</a></li>
+							<li><a href="elements.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://in.linkedin.com/in/parth-salke" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/parthsalke" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						
+							<h2>&#127775; Education</h2>
+							<style>
+								.education-card {
+									display: flex;
+									align-items: start;
+									margin-bottom: 2em;
+									padding: 1.5em;
+									background: rgba(255,255,255,0.03);
+									border-radius: 10px;
+									transition: all 0.3s ease;
+								}
+								
+								.education-card:hover {
+									transform: translateY(-5px);
+									box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+									background: rgba(255,255,255,0.05);
+								}
+								
+								.school-logo {
+									width: 80px;
+									height: 80px;
+									object-fit: contain;
+									margin-right: 1.5em;
+									border-radius: 50%;
+									background: white;
+									padding: 5px;
+								}
+								
+								.education-content {
+									flex: 1;
+								}
+								
+								.education-content h3 {
+									color: #18bfef;
+									margin-bottom: 0.1em;
+								}
+								
+								.education-content h4 {
+									margin-bottom: 0.2em;
+									color: #888;
+								}
+								
+								.education-details {
+									margin-top: 0.5em;
+									padding-left: 1em;
+									border-left: 3px solid #18bfef;
+								}
+								
+								.grade {
+									display: inline-block;
+									background: rgba(254, 255, 255, 0.1);
+									padding: 0.1em 0.5em;
+									border-radius: 15px;
+									color: #111111;
+									font-weight: bold;
+								}
+							</style>
+						
+							<div class="education-card">
+								<img src="images/upenn.png" alt="UPenn Logo" class="school-logo">
+								<div class="education-content">
+									<h3>University of Pennsylvania</h3>
+									<h4>MS in Data Science <i>(2024-2026)</i></h4>
+									<div class="education-details">
+										<p>Machine Learning, Statistics for Data Science, Forecasting Methods, Advanced Topics in Deep Learning, Big Data Analytics</p>
+										<p class="grade">GPA: 4.00 / 4.00</p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="education-card">
+								<img src="images/mit.png" alt="MIT WPU Logo" class="school-logo">
+								<div class="education-content">
+									<h3>MIT World Peace University, Pune</h3>
+									<h4>BTech: Electronics and Communication Engineering <i>(2020-2024)</i></h4>
+									<div class="education-details">
+										<p>Deep Neural Networks, AI-ML, Data Structures and Algorithms, Data Science, Digital Signal Processing, Transform Techniques and Vector Calculus</p>
+										<p class="grade">CGPA: 9.77 / 10.00</p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="education-card">
+								<img src="images/lexicon.png" alt="Lexicon Logo" class="school-logo">
+								<div class="education-content">
+									<h3>The Lexicon International School, Pune</h3>
+									<h4>High School PCM <i>(2018-2020)</i></h4>
+									<div class="education-details">
+										<p class="grade">Grade: 92.5%</p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="education-card">
+								<img src="images/bishops.png" alt="Bishop's School Logo" class="school-logo">
+								<div class="education-content">
+									<h3>The Bishop's School, Pune</h3>
+									<h4>CISCE Science <i>(2005-2018)</i></h4>
+									<div class="education-details">
+										<p class="grade">Grade: 87.8%</p>
+									</div>
+								</div>
+							</div>
+						
+						
+							<section class="post">
+								<h2>&#127775; Patents and Publications</h2>
+								<div class="publication-list">
+									<div class="publication-item">
+										<h4 class="publication-title">[1] Enhancing Driving Safety Through Real-time Posture Detection and Analysis Using Computer Vision</h4>
+										<p class="publication-details">Presented at IEEE NMITCON 2023, Bangalore</p>
+									</div>
+									<div class="publication-item">
+										<h4 class="publication-title">[2] Granted Patent for Wireless DAQ (Data Acquisition System) on Adaptive Cooling System</h4>
+										<p class="publication-details">South African Patent: 2023/02935 · Issued May 31, 2023</p>
+									</div>
+									<div class="publication-item">
+										<h4 class="publication-title">[3] Adaptive Cooling System for CVT of All-Terrain Vehicles with Wireless Data Acquisition System</h4>
+										<p class="publication-details">Presented at IEEE ICONAT 2023, Goa</p>
+									</div>
+									<div class="publication-item">
+										<h4 class="publication-title">[4] Analyzing the Feasibility and Reliability of Nextcloud as a Network Attached Cloud Storage Solution on Raspberry Pi</h4>
+										<p class="publication-details">Presented at IEEE ICIICS 2023, Karnataka</p>
+									</div>
+								</div>
+							</section>
+						
+						
+
+							
+							<section class="experience">
+								<h2>&#127775; Experience</h2>
+								<div class="experience-list">
+							
+									<!-- Experience Item -->
+									<div class="experience-item">
+										<h3>► Technical Research Assistant</h3>
+										<h4>The Wharton School, Wharton AI and Analytics (UPenn) <i>(2024-2025)</i></h4>
+										<ul>
+											<li>Analyzed real-world Google Analytics data for IKEA, identifying conversion drivers and performing statistical modeling using PySpark with Decision Trees and clustering.</li>
+											<li>Utilized BigQuery for data storage and processing, targeting an increase in customer conversion rate from 1.4% to 2.6%.</li>
+										</ul>
+									</div>
+							
+									<div class="experience-item">
+										<h3>► Graduate Teaching Assistant</h3>
+										<h4>University of Pennsylvania <i>(2024-2025)</i></h4>
+										<ul>
+											<li>TA for ESE 5420: Statistics for Data Science</li>
+											<li>TA for CIS 5210: Artificial Intelligence</li>
+										</ul>
+									</div>
+							
+									<div class="experience-item">
+										<h3>► Data Science Intern</h3>
+										<h4>Extentia Information Technology <i>(2023-2024)</i></h4>
+										<ul>
+											<li>Implemented ETL pipelines using Azure Data Factory, Databricks, Synapse Analytics, and Power BI, reducing data processing time by 14%.</li>
+											<li>Automated data migration with PySpark, cutting data validation efforts by 60%, and managed Data Lake processes.</li>
+											<li>Fine-tuned Falcon and GPT20B LLM to streamline SDLC time for chatbot creation using OpenAI and Cognitive Search.</li>
+											<li>Enhanced LLM training by analyzing text and generating vector embeddings, improving accuracy by 10% on validation sets.</li>
+										</ul>
+									</div>
+							
+									<div class="experience-item">
+										<h3>► Research Assistant</h3>
+										<h4>MIT World Peace University <i>(2022-2023)</i></h4>
+										<ul>
+											<li>Focused on detection and developed a custom Mask R-CNN model with depth estimation for indoor environments.</li>
+											<li>Achieved 96% accuracy for the tailored Mask R-CNN and depth estimation implementation.</li>
+										</ul>
+									</div>
+							
+									<div class="experience-item">
+										<h3>► Data Acquisition, Validation, and Electronics Engineer</h3>
+										<h4>Team Piranha Racing <i>(2021-2023)</i></h4>
+										<ul>
+											<li>Developed, tested, and validated prototypes for reliable virtual design correlations.</li>
+											<li>Deployed 20+ data acquisition systems and five electronic subsystems.</li>
+											<li>Created a Power BI dashboard for data visualization, streamlining data storage and transfer with AWS S3 automation.</li>
+										</ul>
+									</div>
+							
+									<div class="experience-item">
+										<h3>► Data Science and Business Analytics Intern</h3>
+										<h4>The Sparks Foundation <i>(Mar 2022 - Apr 2022)</i></h4>
+										<ul>
+											<li>Conducted EDA on datasets, correcting 25% of anomalies to enhance data quality.</li>
+											<li>Applied advanced regression and clustering algorithms, scaling solutions to handle 100K+ data points per minute.</li>
+										</ul>
+									</div>
+							
+									<div class="experience-item">
+										<h3>► Data Analytics Intern</h3>
+										<h4>LetsGrowMore <i>(Feb 2022 - Apr 2022)</i></h4>
+										<ul>
+											<li>Acquired, cleaned, and evaluated datasets to extract insights using various Machine Learning algorithms.</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						
+
+
+					
+
+
+
+					<section class="post">
+						<h2>&#127775; Certifications and Awards</h2>
+						<style>
+							.certification-item {
+								padding: 0.2em;  /* Reduced from 1em */
+								margin-bottom: 0.1em;  /* Reduced from 0.8em */
+								border-radius: 5px;
+								background: rgba(255,255,255,0.03);
+								transition: all 0.3s ease;
+							}
+					
+							.certification-item:hover {
+								background: rgba(255,255,255,0.06);
+								padding-left: 0.7em;  /* Reduced from 1.5em */
+							}
+						</style>
+						<div class="certification-item">Bloomberg Market Concepts</div>
+						<div class="certification-item">Mongo DB Mastering, Infosys Springboard</div>
+						<div class="certification-item">Deep Learning for Python Developers, Infosys Springboard</div>
+						<div class="certification-item">AWS Academy Cloud and Machine Learning Foundations</div>
+						<div class="certification-item">Big Data Analytics with Hadoop and Apache Spark</div>
+						<div class="certification-item">Power BI: Essentials Training Certification</div>
+						<div class="certification-item">RDBMS PostgreSQL, IIT-B Certification</div>
+						<div class="certification-item">CS230 Deep Learning, Stanford University</div>
+						<div class="certification-item">Nvidia DLI Certificate, AI for Jetson Nano</div>
+						<div class="certification-item">Microsoft Azure Fundamentals AZ-900</div>
+						<div class="certification-item">Microsoft Azure AI Fundamentals AI-900</div>
+						<div class="certification-item">BAJA SAE INDIA, AIR #2</div>
+						<div class="certification-item">PMC Merit Scholarship</div>
+						<div class="certification-item">MIT-WPU Merit Scholarship</div>
+					</section>
+
+
+
+						<!-- Footer -->
+						<footer>
+							<center>
+
+								
+									<h3></h3>
+									<ul class="icons alt">
+										<li><a href="https://in.linkedin.com/in/parth-salke" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/parthsalke" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+								
+							
+						</center>
+						</footer>
+
+				</div>
+
+			
+						
+		
+				
+
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li> parthsalke</li><li> <a href="#"></a></li></ul>
+				</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				// Animate sections on scroll
+				const observerOptions = {
+					threshold: 0.1
+				};
+			
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.style.opacity = '1';
+							entry.target.style.transform = 'translateY(0)';
+						}
+					});
+				}, observerOptions);
+			
+				document.querySelectorAll('section.post').forEach(section => {
+					section.style.opacity = '0';
+					section.style.transform = 'translateY(20px)';
+					observer.observe(section);
+				});
+			
+				// Add hover effect to education cards
+				document.querySelectorAll('.education-card').forEach(card => {
+					card.addEventListener('mousemove', (e) => {
+						const rect = card.getBoundingClientRect();
+						const x = e.clientX - rect.left;
+						const y = e.clientY - rect.top;
+						
+						card.style.background = `
+							linear-gradient(145deg, 
+							rgba(255,255,255,${0.08 - (y/rect.height) * 0.05}), 
+							rgba(255,255,255,${0.03 - (x/rect.width) * 0.02}))
+						`;
+					});
+				});
+			</script>
+
+	</body>
+</html>

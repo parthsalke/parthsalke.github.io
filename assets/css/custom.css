@@ -1,0 +1,225 @@
+/* General Styles */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/AI.png');  /* Note the ../ to go up one directory */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(30, 37, 45, 0.9);
+}
+
+body.is-preload {
+    background: none;
+}
+
+/* Animations */
+.animated-text {
+    animation: fadeInDown 1s ease-out;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-content {
+    flex: 1;
+}
+
+/* Skills Section */
+/* Tech Stack Section */
+.tech-stack {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 2em 0;
+    border-radius: 8px;
+}
+
+.tech-icons {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2rem;
+    margin: 2em auto;
+    padding: 0 2em;
+    max-width: 1200px;
+}
+
+.tech-icons img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: grayscale(30%) brightness(90%);
+    justify-self: center;
+    align-self: center;
+}
+
+.tech-icons img:hover {
+    transform: translateY(-5px) scale(1.1);
+    filter: grayscale(0%) brightness(100%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Add a subtle separator between rows */
+.tech-icons::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+}
+
+/* Make tech stack responsive */
+@media (max-width: 1200px) {
+    .tech-icons {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-icons {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    
+    .tech-icons img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-icons {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styling */
+#footer {
+    text-align: center;
+}
+
+#footer .inner {
+    max-width: 100%;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section h3 {
+    margin-bottom: 1em;
+}
+
+.contact-section .icons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section .icons li {
+    margin: 0;
+}
+
+.contact-section .icons a {
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.contact-section .icons a:hover {
+    transform: translateY(-3px);
+    color: var(--primary-color);
+}

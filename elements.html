@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Parth Salke - Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.tech-stack {
+				text-align: center;
+				padding: 2em 0;
+				background: rgba(255, 255, 255, 0.05);
+				margin: 2em 0;
+				border-radius: 8px;
+			}
+			.tech-icons {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 2em;
+				margin: 2em 0;
+				padding: 0 2em;
+			}
+			.tech-icons img {
+				height: 50px;
+				transition: transform 0.2s;
+			}
+			.tech-icons img:hover {
+				transform: scale(1.1);
+			}
+			body {
+        background-image: url('images/AI.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;  /* Add this line */
+        background-color: #1e252d;    /* Add this as fallback */
+    }
+    
+    /* Make sure the wrapper has some transparency */
+    #wrapper {
+        background-color: rgba(30, 37, 45, 0.95);  /* Add this line */
+    }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Make the data shine!</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="generic.html">CV</a></li>
+							<li class="active"><a href="elements.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://in.linkedin.com/in/parth-salke" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/parthsalke" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Tech Stack -->
+						<section class="tech-stack">
+							<h2>Tech Stack</h2>
+							<div class="tech-icons">
+								<img src="images/python.png" alt="Python" title="Python">
+								<img src="images/spark.png" alt="Spark" title="Spark">
+								<img src="images/aws.png" alt="AWS" title="AWS">
+								<img src="images/azure.png" alt="Azure" title="Azure">
+								<img src="images/openai.png" alt="OpenAI" title="OpenAI">
+								<img src="images/docker.png" alt="Docker" title="Docker">
+								<img src="images/git.png" alt="Git" title="Git">
+								<img src="images/gcp.png" alt="GCP" title="GCP">
+								<img src="images/hadoop.png" alt="Hadoop" title="Hadoop">
+								<img src="images/java.png" alt="Java" title="Java">
+								<img src="images/jira.png" alt="Jira" title="Jira">
+								<img src="images/mongodb.png" alt="MongoDB" title="MongoDB">
+								<img src="images/powerbi.png" alt="PowerBI" title="PowerBI">
+								<img src="images/pytorch.png" alt="Pytorch" title="Pytorch">
+								<img src="images/rprog.png" alt="R" title="R">
+								<img src="images/sf.svg" alt="Snowflake" title="Snowflake">
+								<img src="images/databricks.svg" alt="Databricks" title="Databricks">
+								<img src="images/sql.png" alt="SQL" title="SQL">
+								<img src="images/tableau.png" alt="Tableau" title="Tableau">
+								<img src="images/tf.png" alt="Tensorflow" title="Tensorflow">
+
+							</div>
+						</section>
+
+						<section class="posts">
+							<article>
+								<a><h2>FinSight RAG- Financial RAG with Mistral-7B and Langchain</h2></a>
+								<p>Developed platform for traders by fine-tuning the Mistral-7B model on financial data using RAG, including a Q&A 
+									Chatbot for real-time earnings call queries with context precision more than 90%. Built a custom in-memory vector store with Sentence Transformers and leveraged Pinecone for a comprehensive vector 
+									knowledge graph. Fine-tuned for semantic search with a Streamlit app for interaction.</p>
+							</article>
+							<article>
+								<a><h2>Building Resilient Portfolio: Equity Portfolio Optimization and Dynamic Risk Management</h2></a>
+								<p>Led an AWS project using Sagemaker, S3, and Lambda to analyse financial stock portfolio risk and returns through 
+									web scraping and data wrangling. Applied K-means clustering for optimal asset selection and generated risk-return graphs.
+									Used ARIMA model for stock return forecasting and designed constrained portfolio optimization methods.</p>
+							</article>
+							<article>
+								<a><h2>Smart Garbage Segregation using AWS</h2></a>
+								<p>Built an object detection model with Raspberry Pi and 
+									Arduino using CNN and trained 20,000+ images with over 85% accuracy. Performed sensor-based 
+									classification as well as image-based classification</p>
+							</article>
+
+							<article>
+								<a><h2>Video Surveillance System using Nvidia Jetson Nano</h2></a>
+								<p>Performed real-time video surveillance 
+									security monitoring using Nvidia Jetson Nano for object detection and a pre-trained dataset for face 
+									recognition. Analyzed the streamed video using the NVIDIA Deep Stream SDK</p>
+							</article>
+
+							<article>
+								<a><h2>Face Recognition using One shot Learning</h2></a>
+								<p>Implemented real-time face recognition using TensorFlow and OpenCV in Python. CNN model
+									encodes face into a feature vector. For recognition, the input face feature vector is compared to
+									those in a library of data to identify which person.</p>
+							</article>	
+							<article>
+								<a><h2>Loan Eligibility Prediction Using Supervised, Unsupervised and Reinforcement Learning
+								</h2></a>
+								<p>Utilised unsupervised learning for clustering and anomaly detection during preprocessing. Developed multiple 
+									Supervised ML models; XGBoost achieved the highest accuracy of 83% on validation data. Employed reinforcement learning to optimize the decision-making process. Implemented a Python Flask server to 
+									serve the model via HTTP requests using a Streamlit interface.</p>
+							</article>
+                            
+                            <article>
+								<a><h2>Leaf Disease Classification using CNN
+								</h2></a>
+								<p>Built a deep learning Convolutional neural networks project to classify disease in potato plant as either early blight or late blight. 
+We have created a webpage which can input as picture of the plant and tell the farmer if the plant has a disease or not. 
+
+Successfully achieved a Training and Validation accuracy of 98% and achieved a Training and validation loss of 0.183%.
+Deployed the model to Google Cloud Platform by using buckets function.
+
+Technology of this project consists of tensorflow, tf dataset, FastAPI, data augmentation, react js, react native, Google cloud platform (for deployment), quantization, tf lite.</p>
+							</article>
+                            
+                            <article>
+								<a><h2>House Price Predicition</h2></a>
+								<p>I have implemented a Bangalore House Price Prediction model using a Machine Learning algorithm. 
+This model predicts the price of Bangalore's house with the help of a few parameters like availability, size, total square feet, bath, location, etc.
+
+ It's a Machine Learning model which integrates Data Science and Web Development. 
+ I have deployed the app on the Google Cloud Application Platform by creating a Bucket.</p>
+							</article>
+                            
+							<article>
+								<a><h2>Driver Drowsiness System using MATLAB</h2></a>
+								<p>I have designed a fully functional system that uses Computer Vision to detect the drowsiness of the driver and activates the alerts accordingly.
+									Image Processing and Computer Vision tools have been used to code the project in MATLAB.
+									It continuously processes the driver's live video and compares with the threshold value and gives a sound and text output.</p>
+							</article>
+							<article>
+								<a><h2>Hospital Management System</h2></a>
+								<p>Designed software to computerize the Front Office Management of the Hospital and develop user-friendly, fast, and cost-effective software. The project is designed and coded in Java NetBeans and database management is handled by MySQL. It deals with the collection of patient's information, diagnosis details, updating and deleting records of a patient.</p>
+							</article>
+						</section>
+
+						<!-- Footer -->
+						<footer>
+							<center>
+								<section>
+									<h3></h3>
+									<ul class="icons alt">
+										<li><a href="https://in.linkedin.com/in/parth-salke" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://github.com/parthsalke" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</section>
+							</center>
+						</footer>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>parthsalke</li><li><a href="#">Make the data shine!</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
